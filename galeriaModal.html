@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery/daw_gallery.js"></script>
+</head>
+<body>
+<style>
+    #detail {
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .thumb-rollover {
+        transform: scale(1.1);
+        transition: all .4s ease-in-out;
+    }
+
+    .border-vermell {
+        border: 3px solid red;
+    }
+
+    .modal {
+        /* display: none; Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    .modal img {
+        background-color: #fefefe;
+        margin-top: 20%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blue;
+        width: 80%
+    }
+    #thumbs li img.selected{
+        border: solid 2px red;
+    }
+</style>
+<div style="display: flex;">
+    <img class="linkImg" src="thumbs/baobabs-2708289-1.jpg">
+    <img class="linkImg" src="thumbs/David-Koester-Start-In-Die-Landschaftsfotografie-I.jpg">
+    <img class="linkImg" src="thumbs/DSC2159-Edit1.jpg">
+    <img class="linkImg" src="thumbs/IMG-20170705-WA0002.jpg">
+    <img class="linkImg" src="thumbs/iStock-546424192.jpg">
+    <img class="linkImg" src="thumbs/Lavender-fields-cover.jpg">
+    <img class="linkImg" src="thumbs/PhotographingTwilight_TannerWendellStewart-218136823.jpg">
+</div>
+<div id="image-title">
+
+</div>
+<div id="detail" class="modal">
+    <img id="main-image" src="">
+    <div id="modal-controller">
+        <a href="" class="button" id="prev-button">Prev</a>
+        <a href="" class="button" id="next-button">Next</a>
+        <a href="" id="close-button" class="button">Close</a>
+    </div>
+</div>
+</body>
+</html>
