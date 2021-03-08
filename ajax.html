@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="jquery/daw_gallery.js"></script>
 </head>
 <body>
@@ -54,26 +55,20 @@
         border: solid 2px red;
     }
 </style>
-<div style="display: flex;">
-    <img class="linkImg" src="thumbs/baobabs-2708289-1.jpg">
-    <img class="linkImg" src="thumbs/David-Koester-Start-In-Die-Landschaftsfotografie-I.jpg">
-    <img class="linkImg" src="thumbs/DSC2159-Edit1.jpg">
-    <img class="linkImg" src="thumbs/IMG-20170705-WA0002.jpg">
-    <img class="linkImg" src="thumbs/iStock-546424192.jpg">
-    <img class="linkImg" src="thumbs/Lavender-fields-cover.jpg">
-    <img class="linkImg" src="thumbs/PhotographingTwilight_TannerWendellStewart-218136823.jpg">
-</div>
-<div id="image-title">
-
-</div>
-<div id="detail" class="">
-    <img id="main-image" class="center" src="">
-
-    <div id="modal-controller" class="center">
-        <a class="button" id="prev">Prev</a>
-        <a class="button" id="next">Next</a>
-        <a class="button" id="close">Close</a>
-    </div>
-</div>
+    <script src="jquery/ajax.js"></script>
+    
+    <div style="display: flex;" id="thumbs">
+        
+        </div>
+       
+        <div id="detail" style="display: none;">
+         <img id="main-image"  >
+         <div class="modal-controller">
+           <div class="button" id="prev">Prev</div>
+           <div class="button" id="next">Next</div>
+           <div class="button" id="close">Close</div>
+         </div>
+       </div>
+       <script src="js/daw_gallery.js"></script>
 </body>
 </html>

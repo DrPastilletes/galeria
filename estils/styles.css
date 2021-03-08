@@ -1,0 +1,105 @@
+img {
+    border: 2px solid black;
+}
+
+#detail {
+    width: 100%;
+    height: 100%;
+}
+
+.thumb-rollover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#thumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal {
+    /* display: none; Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    margin-bottom: 50px;
+}
+
+.img200 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+
+/* Modal Content/Box */
+
+.modal img,
+video {
+    background-color: #fefefe;
+    margin-top: 20%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    width: 80%;
+}
+
+.amagar {
+    display: none;
+}
+
+#thumbs li img.selected {
+    border: solid 2px red;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+#modal-controller a {
+    margin-top: 5px;
+    border: 2px solid black;
+    padding: 1px;
+}
+
+#modal-controller a:hover {
+    color: red;
+}
+
+audio {
+    background-color: white;
+}
+
+.amagarMainImg {
+    display: none!important;
+}
